@@ -1,169 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<section class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="bg-menu" id="home">
-						<nav>
-							<ul class="menu">
-								<li class="logo"><a href="#"> Personal Website </a></li>
-								<li><a href="#portofolio"> Portofolio</a></li>
-								<li><a href="#about"> About</a></li>
-								<li><a href="#home"> Home</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="col-lg-12 col-md-12 col-sl-12 ">
-					<div class="text-banner">
-						<h2 class="sub">Hello</h2>
-						<h1>I Am <strong>Putu Ryan Darmayasa.</strong></h1>
-						<p class="skill">Mahasiswa PTI Angkatan 2021</p>
-					</div> 
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="bg-about">
-
-		<div class="container">
-			<div class="row">
-
-				<div class="profil" style="padding-top: 50px; padding-bottom: 100px;" id="about">
-					<div class="row">
-						<div class="judul-diri">
-							<h1><strong>About</strong> Me</h1>
-						</div>
-						<div class="col-lg-3 col-md-12" >
-							<div class="photo mx-auto"></div>
-						</div>
-						<div class="col-lg-9 col-md-12">
-							<div class="about">
-								<div class="judul-about">
-									<h1>Putu Ryan Darmayasa</h1>
-									<p>
-										Mahasiswa Undiksha / Web Developer / Gamer
-									</p>
-								</div>
-								<p class="text">
-									Lahir di Denpasar pada tanggal 25 Januari 2003 dan Tinggal di Kota Denpasar, Kec. Denpasar Selatan, Desa Sesetan.<br>Hobi saya bermain game, mendengarkan musik, dan bermain buluh tangkis.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- <hr> -->
-			</div>
-		</div>
-
-		<!-- <div class="row">
-			<div class="col-lg-12">
-					<div class="break">
-						
-					</div>
-				</div>
-		</div> -->
-
-		<!-- <div class="container">
-			<div class="row">
-				<div class="judul-diri">
-					<h1>My <strong>Hobbys.</strong></h1>
-					<hr>
-				</div>
-				<div class="col-lg-4">
-					<div class="hobbys">
-						<div class="bg-icon">
-						<img src="image/camera.svg">
-					</div>
-
-					<h2>Photography</h2>
-					</div>
-					
-				</div>
-				<div class="col-lg-4">
-					<div class="hobbys">
-						<div class="bg-icon">
-							<img src="image/design.svg">
-						</div>
-
-						<h2>Design</h2>
-					</div>
-					
-				</div>
-				<div class="col-lg-4">
-					<div class="hobbys">
-						<div class="bg-icon">
-							<img src="image/game.svg">
-						</div>
-
-					<h2>Gaming</h2>
-					</div>
-					
-				</div>
-			</div>
-
-		</div> -->
-
-		<div class="bg-protofolio" id="portofolio">
-			<div class="container">
-				<div class="row">
-					<div class="judul-diri" style="margin-top: 30px;">
-						<h1>My <strong style="color:#fff;">Portofolio</strong></h1>
-					
-					</div>
-					<div class="col-lg-6">
-						<div class="project-left">
-							<div class="foto-porto">
-								<img src="image/project.png">
-							</div>
-							<h2>CV Dua Putra Darma</h2>
-							<p>Website ecommerce sederhana yang saya buat ketika liburan panjang setelah semester 2 menggunakan php dan database Mysql<br>
-						</div>	
-							
-					
-					</div>
-					<div class="col-lg-6">
-						<div class="portoku">
-							<div class="web">
-							<div class="foto-porto">
-								<img src="image/project2.png">
-							</div>
-
-								<h2>Report Aja!!</h2>
-								<p>Website pengaduan yang saya buat ketika SMK sebagai tugas UK (uji kompetensi). website ini menggunakan php, framework bootsrap dan database Mysql. <br>
-
-							</div>
-
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		
-	</section>
-	<section class="footer">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="copy">
-					<h3>Copyright ©2022 Putu Ryan Darmayasa</h3>
-				</div>
-				
-			</div>
-		</div>
-	</section>
+    <section class="wrapper">
+        <section class="header">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark w-100 py-3 bg-transparent">
+                <div class="container fluid">
+                    <a class="navbar-brand" href="#">Personal Web</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 ">
+                            <li class="nav-item px-3">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link active" href="#about">About</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link active" href="#portofolio">Portofolio</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="banner">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-lg-12">
+                            <div class="desc">
+                                <p>Hello</p>
+                                <h1>I Am <strong>Putu Ryan Darmayasa</strong></h1>
+                                <h3>Mahasiswa PTI Angkatan 2021</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-about" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="profil">
+                        <div class="row">
+                            <div class="judul-diri">
+                                <h1><strong>About</strong> Me</h1>
+                            </div>
+                            <div class="col-lg-3 col-md-12" >
+                                <div class="photo mx-auto"></div>
+                            </div>
+                            <div class="col-lg-9 col-md-12">
+                                <div class="about">
+                                    <div class="judul-about">
+                                        <h1>Putu Ryan Darmayasa</h1>
+                                        <p>Mahasiswa Undiksha / Web Developer / Gamer</p>
+                                    </div>
+                                    <p class="bio-about">
+                                        Lahir di Denpasar pada tanggal 25 Januari 2003 dan Tinggal di Kota Denpasar, Kec. Denpasar Selatan, Desa Sesetan.<br>Hobi saya bermain game, mendengarkan musik, dan bermain buluh tangkis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-protofolio" id="portofolio">
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="judul-diri" style="margin-top: 30px;">
+                            <h1>My <strong style="color:#fff;">Portofolio</strong></h1>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-left">
+                                <div class="foto-porto">
+                                    <img src="image/project.png">
+                                </div>
+                                <h2>CV Dua Putra Darma</h2>
+                                <p>Website ecommerce sederhana yang saya buat ketika liburan panjang setelah semester 2 menggunakan php dan database Mysql<br>
+                            </div>	
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="portoku">
+                                <div class="web">
+                                <div class="foto-porto">
+                                    <img src="image/project2.png">
+                                </div>
+                                    <h2>Report Aja!!</h2>
+                                    <p>Website pengaduan yang saya buat ketika SMK sebagai tugas UK (uji kompetensi). website ini menggunakan php, framework bootsrap dan database Mysql. <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="project-left">
+                                <div class="foto-porto">
+                                    <img src="image/expatasia.jpg">
+                                </div>
+                                <h2>Expatasia</h2>
+                                <p>Website Jasa Baliho yang dibuat untuk uas Matkul Pemrograman Web<br>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <section class="footer">
+            <div class="text-center p-4" style="background-color: #00458B; color: #fff;">
+                <p class="text-reset ">©2023 Copyright: <strong>Putu Ryan Darmayasa</strong> </p>
+            </div>
+        </section>
+    </section>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+		$(function () {
+			$(document).scroll(function () {
+				var $nav = $(".navbar.fixed-top");
+				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+			});
+		});
+	</script>
 </body>
 </html>
