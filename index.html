@@ -8,19 +8,21 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
-<body>
+<body data-aos-easing="ease-in-out" data-aos-duration="1000">
     <section class="wrapper">
         <section class="header">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark w-100 py-3 bg-transparent">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark w-100 py-3 bg-transparent" data-aos="fade-down">
                 <div class="container fluid">
                     <a class="navbar-brand" href="#">Personal Web</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav mb-2 mb-lg-0 ">
+                        <ul class="navbar-nav mb-2 mb-lg-0 " >
                             <li class="nav-item px-3">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
@@ -38,10 +40,9 @@
                 <div class="container">
                     <div class="row ">
                         <div class="col-lg-12">
-                            <div class="desc">
-                                <p>Hello</p>
-                                <h1>I Am <strong>Putu Ryan Darmayasa</strong></h1>
-                                <h3>Mahasiswa PTI Angkatan 2021</h3>
+                            <div class="desc" data-aos="fade-in" data-aos-duration="3000">
+                                <h1><strong>Putu Ryan Darmayasa</strong></h1>
+                                <p>Mahasiswa PTI Angkatan 2021</p>
                             </div>
                         </div>
                     </div>
@@ -51,15 +52,15 @@
         <section class="bg-about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="profil">
+                    <div class="profil mx-auto">
                         <div class="row">
-                            <div class="judul-diri">
+                            <div data-aos="fade-up" class="judul-diri">
                                 <h1><strong>About</strong> Me</h1>
                             </div>
-                            <div class="col-lg-3 col-md-12" >
+                            <div data-aos="fade-up" data-aos-delay="100" class="col-lg-3 col-md-12" >
                                 <div class="photo mx-auto"></div>
                             </div>
-                            <div class="col-lg-9 col-md-12">
+                            <div data-aos="fade-up" data-aos-delay="100" class="col-lg-9 col-md-12">
                                 <div class="about">
                                     <div class="judul-about">
                                         <h1>Putu Ryan Darmayasa</h1>
@@ -121,8 +122,10 @@
             </div>
         </section>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
 		$(function () {
 			$(document).scroll(function () {
@@ -130,6 +133,18 @@
 				$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 			});
 		});
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var typed = new Typed('.typed-text', {
+                strings: ["Mahasiswa PTI Angkatan 2021"],
+                typeSpeed: 50,
+                showCursor: false,
+            });
+        });
+        
+        AOS.init({
+        duration: 1200, // Atur durasi default di sini jika diperlukan
+    });
 	</script>
 </body>
 </html>
