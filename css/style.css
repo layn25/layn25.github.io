@@ -14,6 +14,25 @@ body{
 	background-size: cover;
 	background-attachment: fixed;
 }
+
+.header:before {
+	content: "";
+	background: rgba(5, 13, 24, 0.3);
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.header h1{
+	color: #fff;
+}
+.header p{
+	color: #fff;
+}
+
 .navbar.fixed-top.scrolled {
 	background-color: white !important;
 	transition: background-color 600ms linear;
@@ -32,6 +51,8 @@ body{
 	width: 100%;
 	margin-top: 30vh;
 	text-align: center;
+	position: relative;
+	z-index: 2;
 }
 .desc h1{
 	color: #fff;
@@ -74,7 +95,7 @@ body{
 	text-align: center;
 }
 .judul-diri strong {
-	color: #0096FF;
+	color: #333;
 }
 @media screen and (max-width: 900px) {
     .judul-diri h1 {
@@ -278,7 +299,7 @@ p.bio-about {
 	background-size: cover;
 }
 .bg-protofolio{
-	background-color: #0096FF;
+	background-color: #f5f8fd;
 	width: 100%;
 	
 }
@@ -286,8 +307,10 @@ p.bio-about {
 .foto-porto{
 	width: 100%;
 	background-color: #fff;
-	box-shadow: 2px 4px 10px rgba(0, 0, 0, .7);
-	margin-bottom: 50px;
+	/* box-shadow: 2px 4px 10px rgba(0, 0, 0, .7); */
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	margin: auto;
+	margin-bottom: 30px;
 
 }
 
@@ -296,14 +319,14 @@ p.bio-about {
 }
 
 .project-left h2 {
-	color: #fff;
-	margin-top: 20px;
+	text-align: center;
+	color: #333;
 }
 
 .project-left p {
-	color: #fff;
-	font-size: 20px;
-	margin-top: 30px;
+	color: #333;
+	font-size: 16px;
+	margin-top: 20px;
 }
 
 .portoki{
@@ -311,33 +334,29 @@ p.bio-about {
 	
 }
 .web{
-
 	width: 100%;
-	text-align: center;
 	color: #333;
-	margin: 100px 20px 50px;
-	padding: 10px 20px 40px;
-
+	margin: 50px 20px 30px;
 
 }
 
 .bg-web{
 	width: 300px;
-	background-color:#fff;
+	background-color:#333;
 	margin: 200px auto 0 ;
 	padding: 50px;
 	border-radius: 50%;	
 }
 
 .web h2 {
-	color: #fff;
-	margin-top: 20px;
+	text-align: center;
+	color: #333;
 }
 
 .web p {
-	color: #fff;
-	font-size: 20px;
-	margin-top: 30px;
+	color: #333;
+	font-size: 16px;
+	margin-top: 20px;
 }
 
 
@@ -350,4 +369,19 @@ p.bio-about {
 	background-color: #fff;
 	padding: 4% 0;
 	margin-top: 11%;
+}
+.caro-hehe{
+	text-align: left;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+.caro-hehe h5 {
+	font-size: 10px;
+	font-weight: 100;
+	margin-bottom: 20px;
+}
+
+.caro-hehe img{
+	width: 100%;
 }
