@@ -290,15 +290,8 @@ p.bio-about {
 	
 }
 /* project */
-.bg-project {
-	width: 100%;;
-	height: 1354px;
-	background-image: url(../image/bg-portofolio.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-.bg-protofolio{
+
+.bg-project{
 	background-color: #f5f8fd;
 	width: 100%;
 	
